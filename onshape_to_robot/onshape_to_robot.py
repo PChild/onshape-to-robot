@@ -108,7 +108,7 @@ def extractPartName(name, configuration):
     if configuration != 'default' and len(configuration) < 40:
         parts += ['_' + configuration.replace('=', '_').replace(' ', '_')]
 
-    return '_'.join(parts).lower()
+    return '_'.join(parts).lower().replace('/', '-').replace('"', '')
 
 def processPartName(name, configuration, overrideName=None):
     if overrideName is None:
