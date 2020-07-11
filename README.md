@@ -1,5 +1,7 @@
 # OnShape to Robot (SDF/URDF)
 
+## NOTE: This fork removes `"` and `/` from part names as standard content library parts often have these characters and they break the converter.
+
 <p align="center">
 <img src="docs/source/_static/img/main.png" />
 </p>
